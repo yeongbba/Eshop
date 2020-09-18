@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-Shop</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background: #d0d9e0;
+        height: 100vh;
+      }
+      .phone {
+        width: 656px;
+        height: 1024px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: url(phone_bg.jpg) no-repeat;
+      }
+      .content {
+        width: 414px;
+        height: 736px;
+        position: absolute;
+        left: 128px;
+        top: 157px;
+        background: #fff;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone">
+      <div class="content">
+        <iframe src="mobile/index.html" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script>
+      var ratio = window.devicePixelRatio;
+      console.log(ratio);
+      if (ratio >= 2) {
+        // document.querySelector('.pc').style.display = 'none';
+        location.href = "./mobile/index.html";
+      } else {
+        // document.querySelector('.mobile').style.display = 'none';
+      }
+    </script>
+    <script>
+      if (Modernizr.touchevents) {
+        // supported
+        //document.querySelector('.pc').style.display = 'none';
+        //console.log(location.href);
+        location.href = "./mobile/";
+      } else {
+        // not-supported
+        // document.querySelector('.mobile').style.display = 'none';
+        //console.log(location.href);
+      }
+
+      // var uAgent = navigator.userAgent;
+      // console.log(uAgent);
+
+      // if(jQuery.browser.mobile){
+
+      // }else{
+
+      // }
+    </script>
+  </body>
+</html>

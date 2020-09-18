@@ -1,0 +1,46 @@
+@import url(reset.css);
+@import url(webfonts.css);
+@import url(common.css);
+
+/* -------------- FRONT PAGE -------------- */
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.front .main_content {
+  flex: 1;
+  padding: 37px 0;
+  overflow: hidden;
+}
+
+.main_footer {
+  display: flex;
+}
+.main_footer a {
+  flex: 1;
+}
+.main_slide_wrapper {
+  width: 270px;
+  margin: 0 auto;
+  height: 390px;
+  position: relative;
+}
+.swiper-pagination-bullet-active {
+  background: #262628;
+}
+.main_content_info {
+  margin-top: 24px;
+}
+.main_content h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.main_content p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+  text-align: center;
+}
