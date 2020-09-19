@@ -44,3 +44,80 @@
   box-sizing: border-box;
   text-align: center;
 }
+/* -------------- SIGN IN & UP -------------- */
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 36px 22px 0 22px;
+  align-items: center;
+}
+
+.sub_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sub_content h1,
+.sub_content fieldset {
+  padding: 38px 38px 0 38px;
+}
+.sub_content h1 {
+  text-align: left;
+}
+.login_form {
+  margin-top: 73px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.login_form a {
+  width: 100%;
+  text-align: center;
+}
+.login_form .btn {
+  width: 100%;
+  border: none;
+}
+.login_form label {
+  display: block;
+  color: #c2c4ca;
+}
+.login_form fieldset {
+  width: 100%;
+}
+.login_form fieldset input {
+  border: none;
+  border-bottom: 1px solid #c2c4ca;
+  height: 45px;
+  line-height: 45px;
+  color: #4a4a4a;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+.login_form fieldset input:focus {
+  border-bottom-color: #979797;
+}
+.login_form fieldset input:first-of-type {
+  margin-bottom: 62px;
+}
+.login_form fieldset input::placeholder {
+  color: #c2c4ca;
+}
+.signup_form fieldset input:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+header.signup {
+  background: url(../images/signUp_bg.jpg) no-repeat left top/cover;
+  height: 286px;
+  padding-top: 36px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+header.signup h1 {
+  width: 100%;
+  text-align: center;
+}
+
+/* -------------- HOME -------------- */
