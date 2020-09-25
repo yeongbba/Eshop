@@ -61,3 +61,22 @@ $(function(){
 
     }
     
+        //상세페이지 썸네일 슬라이드
+        if($('.product_thumb_slides').length){
+
+            var swiper = new Swiper('.product_thumb_container', {
+                slidesPerView: 2.5,
+                spaceBetween: 13           
+            });
+    
+            //이미지 변경하기
+            var thumbImg = $('.product_thumb_slides li img');
+            var tartgetImg = $('.product_img_top img');
+    
+            thumbImg.click(function(){
+                var targetImgUrl = $(this).attr('src');
+                tartgetImg.attr('src',targetImgUrl);
+            });
+    
+    
+        }
