@@ -80,3 +80,22 @@ $(function(){
     
     
         }
+
+        
+    //상세페이지 별표
+    if($('.review_content').length){
+        var rating = $('.review_content li .rating');
+        
+        /*
+            rating 마다 할일
+                각각이 가지고 있는 별점을 변수명 starscore 3에 저장한다.
+                svg nth:child 몇번째 1 ~ 3번째 
+                color를 F05522로 변경한다.
+        */
+       rating.each(function(){
+        var starscore = $(this).attr('data-rate');
+        $(this).find('svg:nth-child(-n+' + starscore +')').css({color:'#F05522'});
+       });
+
+
+    }
